@@ -20,6 +20,11 @@
 		06A82F1D25A1A2CE001BB7E6 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A82F1C25A1A2CE001BB7E6 /* ProductRow.swift */; };
 		06A82F2425A1A617001BB7E6 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A82F2325A1A617001BB7E6 /* ColorExtension.swift */; };
 		1B1BA4A325A2DB8C0011F037 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1BA4A225A2DB8C0011F037 /* SignInView.swift */; };
+		1B26006625AC6FED00A13B97 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B26006525AC6FED00A13B97 /* Order.swift */; };
+		1B26006E25AC8AD600A13B97 /* CustomViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B26006D25AC8AD600A13B97 /* CustomViewModifier.swift */; };
+		1B75012425AC20380003EE17 /* PopOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75012325AC20380003EE17 /* PopOverView.swift */; };
+		1B75012A25AC29940003EE17 /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75012925AC29940003EE17 /* QuantitySelector.swift */; };
+		1B75013825AC3FF20003EE17 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75013725AC3FF20003EE17 /* FavoriteButton.swift */; };
 		1B7EFFA225A2960800C7961C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7EFFA125A2960800C7961C /* Product.swift */; };
 		1BFB316625A47EBA008B1E64 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB316525A47EBA008B1E64 /* BundleExtension.swift */; };
 		1BFB316B25A48053008B1E64 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB316A25A48053008B1E64 /* Store.swift */; };
@@ -67,6 +72,11 @@
 		06A82F1C25A1A2CE001BB7E6 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		06A82F2325A1A617001BB7E6 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		1B1BA4A225A2DB8C0011F037 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		1B26006525AC6FED00A13B97 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		1B26006D25AC8AD600A13B97 /* CustomViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModifier.swift; sourceTree = "<group>"; };
+		1B75012325AC20380003EE17 /* PopOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverView.swift; sourceTree = "<group>"; };
+		1B75012925AC29940003EE17 /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
+		1B75013725AC3FF20003EE17 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		1B7EFFA125A2960800C7961C /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		1BFB316525A47EBA008B1E64 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		1BFB316A25A48053008B1E64 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -169,12 +179,12 @@
 		06A82F0B25A180F9001BB7E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				06A82F0C25A180FE001BB7E6 /* Home.swift */,
-				06A82F1C25A1A2CE001BB7E6 /* ProductRow.swift */,
+				1B75012825AC297D0003EE17 /* Home */,
 				1B1BA4A225A2DB8C0011F037 /* SignInView.swift */,
-				1BFB317B25A58475008B1E64 /* ProductDetailView.swift */,
 				1BFC8F4C25A81D44004C30C5 /* UserInteractionView.swift */,
 				1BFC8F5125A87311004C30C5 /* EnviromentObjectview.swift */,
+				1B75012325AC20380003EE17 /* PopOverView.swift */,
+				1B26006D25AC8AD600A13B97 /* CustomViewModifier.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,11 +216,24 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		1B75012825AC297D0003EE17 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				06A82F0C25A180FE001BB7E6 /* Home.swift */,
+				06A82F1C25A1A2CE001BB7E6 /* ProductRow.swift */,
+				1BFB317B25A58475008B1E64 /* ProductDetailView.swift */,
+				1B75012925AC29940003EE17 /* QuantitySelector.swift */,
+				1B75013725AC3FF20003EE17 /* FavoriteButton.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		1B7EFF9A25A294B000C7961C /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				1B7EFFA125A2960800C7961C /* Product.swift */,
 				1BFB316A25A48053008B1E64 /* Store.swift */,
+				1B26006525AC6FED00A13B97 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -354,8 +377,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B75012A25AC29940003EE17 /* QuantitySelector.swift in Sources */,
 				1B1BA4A325A2DB8C0011F037 /* SignInView.swift in Sources */,
 				06A82EDD25A180E8001BB7E6 /* FruitMart.xcdatamodeld in Sources */,
+				1B26006625AC6FED00A13B97 /* Order.swift in Sources */,
+				1B75013825AC3FF20003EE17 /* FavoriteButton.swift in Sources */,
+				1B75012425AC20380003EE17 /* PopOverView.swift in Sources */,
 				1BFC8F4D25A81D44004C30C5 /* UserInteractionView.swift in Sources */,
 				1B7EFFA225A2960800C7961C /* Product.swift in Sources */,
 				06A82ED625A180E8001BB7E6 /* AppDelegate.swift in Sources */,
@@ -366,6 +393,7 @@
 				1BFC8F5225A87311004C30C5 /* EnviromentObjectview.swift in Sources */,
 				1BFB316B25A48053008B1E64 /* Store.swift in Sources */,
 				06A82F0D25A180FE001BB7E6 /* Home.swift in Sources */,
+				1B26006E25AC8AD600A13B97 /* CustomViewModifier.swift in Sources */,
 				06A82ED825A180E8001BB7E6 /* SceneDelegate.swift in Sources */,
 				06A82F2425A1A617001BB7E6 /* ColorExtension.swift in Sources */,
 				06A82EDA25A180E8001BB7E6 /* ContentView.swift in Sources */,
@@ -466,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -521,7 +549,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -541,6 +569,7 @@
 				DEVELOPMENT_TEAM = 9P6WAX9VN5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FruitMart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,6 +591,7 @@
 				DEVELOPMENT_TEAM = 9P6WAX9VN5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FruitMart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

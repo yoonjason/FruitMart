@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct Home: View {
-    let store: Store
+//    let store: Store
+    @EnvironmentObject private var store: Store
 
     var body: some View {
         NavigationView {
@@ -20,18 +21,18 @@ struct Home: View {
 //            }
             List(store.products) { product in
                 NavigationLink(
-                    destination:ProductDetailView(product: product)) {
+                    destination: ProductDetailView(product: product)) {
                     ProductRow(product: product)
                 }
             }
                 .navigationBarTitle("과일마트")
                 .onAppear {
-                    print("onAppear")
+                print("onAppear")
             }
-            .onDisappear {
+                .onDisappear {
                 print("onDisappear")
             }
-            
+
 
         }
 
@@ -42,7 +43,9 @@ struct Home: View {
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
 //        Home(store: Store())
-        Preview(source: Home(store: Store()))
+//        Preview(source: Home(store: Store()))
+        Preview(source: Home())
+            .environmentObject(Store())
     }
 }
 

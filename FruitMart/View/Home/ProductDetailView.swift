@@ -9,13 +9,39 @@ import SwiftUI
 
 struct ProductDetailView: View {
     let product: Product
+    @State private var quantity: Int = 1
+    @State private var showingAlert: Bool = false
+    @EnvironmentObject private var store : Store
+
     var body: some View {
         VStack(spacing: 0) {
             productImage
             orderView
         }
             .edgesIgnoringSafeArea(.top)
+            .alert(isPresented: $showingAlert) {
+                print($showingAlert)
+                return confirmAlert
+        }
+
     }
+
+    var confirmAlert: Alert {
+        Alert(
+            title: Text("주문확인"),
+            message: Text("\(product.name)을(를) \(quantity)개 구매하겠습니까?"),
+            primaryButton: .default(Text("확인"), action: {
+//                self.store.placeOrder(product: product, quantity: quantity)
+                self.placeOrder()
+            }),
+            secondaryButton: .cancel(Text("취소"))
+        )
+    }
+    
+    func placeOrder(){
+        store.placeOrder(product: product, quantity: quantity)
+    }
+    
 
 
 }
@@ -23,10 +49,10 @@ struct ProductDetailView: View {
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
         let source1 = ProductDetailView(product: productSamples[0])
-        let source2 = ProductDetailView(product: productSamples[1])
+//        let source2 = ProductDetailView(product: productSamples[1])
         return Group {
             Preview(source: source1)
-            Preview(source: source2, devices: [.iPhone12Pro], displayDarkMode: false)
+//            Preview(source: source2, devices: [.iPhone12Pro], displayDarkMode: false)
         }
 //        ProductDetailView(product: productSamples[1])
 
@@ -56,7 +82,7 @@ extension ProductDetailView {
                 .cornerRadius(16)
                 .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: -5)
         }
-        .clipped()
+            .clipped()
 
     }
 
@@ -65,10 +91,7 @@ extension ProductDetailView {
             HStack {
                 Text(product.name).font(.largeTitle).fontWeight(.medium).foregroundColor(.black)
                 Spacer()
-                Image(systemName: "heart")
-                    .imageScale(.large)
-                    .foregroundColor(Color.peach)
-                    .frame(width: 32, height: 32)
+                FavoriteButton(product: product)
             }
             Text(splitText(product.description))
                 .foregroundColor(.secondaryText)
@@ -77,15 +100,20 @@ extension ProductDetailView {
     }
 
     var priceInfo: some View {
-        HStack {
-            Text("\(self.product.price)").font(.title).fontWeight(.medium) + Text(" 원")
+        let price = quantity * product.price
+        return HStack {
+            Text("\(price)").font(.title).fontWeight(.medium) + Text(" 원")
             Spacer()
+            QuantitySelector(quantity: $quantity)
+
         }
             .foregroundColor(.black)
     }
 
     var placeOrderButton: some View {
-        Button(action: { }) {
+        Button(action: {
+            self.showingAlert = true
+        }) {
             Capsule()
                 .fill(Color.peach)
                 .frame(maxWidth: .infinity, minHeight: 30, maxHeight: 55)

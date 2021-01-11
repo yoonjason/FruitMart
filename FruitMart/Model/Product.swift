@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Product : Codable {
+struct Product : Codable, Equatable {
 //    let id : UUID = UUID()
     var id : String {
         name

@@ -29,15 +29,17 @@ struct ProductRow: View {
 
 struct ProductRow_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ForEach(productSamples) {
-                ProductRow(product: $0)
-            }
-            ProductRow(product: productSamples[0])
-                .preferredColorScheme(.dark)
-        }
-        .padding()
-        .previewLayout(.sizeThatFits)
+        
+        ProductRow(product: productSamples[0])
+//        Group {
+//            ForEach(productSamples) {
+//                ProductRow(product: $0)
+//            }
+//            ProductRow(product: productSamples[0])
+//                .preferredColorScheme(.dark)
+//        }
+//        .padding()
+//        .previewLayout(.sizeThatFits)
     }
 }
 
@@ -75,11 +77,7 @@ extension ProductRow {
                 + Text("원")
                 .font(.footnote)
             Spacer()
-            Image(systemName: "heart")
-                .imageScale(.large)
-                .foregroundColor(Color.peach)
-                .frame(width: 32, height: 32)
-            
+            FavoriteButton(product : product)
             Image(systemName: "cart")
                 .imageScale(.large)
                 .foregroundColor(Color.peach)

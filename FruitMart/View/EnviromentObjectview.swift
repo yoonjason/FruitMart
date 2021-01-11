@@ -45,12 +45,15 @@ struct EnviromentObjectview: View {
         presentView
     }
     
+    
     var presentView : some View {
         Button(action:{self.showingSheet.toggle()}) {
             Text("Present")
                 .font(.title).foregroundColor(.blue)
+
         }
         .sheet(isPresented: $showingSheet, onDismiss: {
+            print($showingSheet)
             print("DisMissed")
         }, content: {
             PresentedView()
@@ -79,7 +82,7 @@ struct SubView : View {
 
 struct PresentedView : View {
     @Environment(\.presentationMode) var presentationMode
-    @Binding var isPresented : Bool
+//    @Binding var isPresented : Bool
     var body: some View {
         Button(action:{
             if self.presentationMode.wrappedValue.isPresented {
