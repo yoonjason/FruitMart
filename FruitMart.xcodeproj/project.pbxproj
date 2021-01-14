@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0207C0F3717778AB309013A2 /* Pods_FruitMart_FruitMartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91302CB609A6A3962CEECEE4 /* Pods_FruitMart_FruitMartUITests.framework */; };
 		06A82ED625A180E8001BB7E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A82ED525A180E8001BB7E6 /* AppDelegate.swift */; };
 		06A82ED825A180E8001BB7E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A82ED725A180E8001BB7E6 /* SceneDelegate.swift */; };
 		06A82EDA25A180E8001BB7E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A82ED925A180E8001BB7E6 /* ContentView.swift */; };
@@ -22,6 +23,16 @@
 		1B1BA4A325A2DB8C0011F037 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1BA4A225A2DB8C0011F037 /* SignInView.swift */; };
 		1B26006625AC6FED00A13B97 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B26006525AC6FED00A13B97 /* Order.swift */; };
 		1B26006E25AC8AD600A13B97 /* CustomViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B26006D25AC8AD600A13B97 /* CustomViewModifier.swift */; };
+		1B39801225B0270F00458394 /* Marquee in Frameworks */ = {isa = PBXBuildFile; productRef = 1B39801125B0270F00458394 /* Marquee */; };
+		1B39801725B0284F00458394 /* MarqueeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B39801625B0284F00458394 /* MarqueeButtonView.swift */; };
+		1B39802F25B03ECF00458394 /* ProfileImageTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B39802E25B03ECF00458394 /* ProfileImageTestView.swift */; };
+		1B39803A25B048BD00458394 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B39803925B048BD00458394 /* Popup.swift */; };
+		1B5D19AF25AEEC09000AB153 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5D19AE25AEEC09000AB153 /* R.generated.swift */; };
+		1B64401725AF03B7001887EE /* ButtonSuctomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B64401625AF03B7001887EE /* ButtonSuctomView.swift */; };
+		1B64401F25AF29E4001887EE /* CustomUIAppearanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B64401E25AF29E4001887EE /* CustomUIAppearanceView.swift */; };
+		1B64402925AFC270001887EE /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B64402825AFC270001887EE /* Symbol.swift */; };
+		1B64402E25AFCDF1001887EE /* ResizedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B64402D25AFCDF1001887EE /* ResizedImage.swift */; };
+		1B64403325AFEEC2001887EE /* ShirinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B64403225AFEEC2001887EE /* ShirinkButtonStyle.swift */; };
 		1B75012425AC20380003EE17 /* PopOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75012325AC20380003EE17 /* PopOverView.swift */; };
 		1B75012A25AC29940003EE17 /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75012925AC29940003EE17 /* QuantitySelector.swift */; };
 		1B75013825AC3FF20003EE17 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75013725AC3FF20003EE17 /* FavoriteButton.swift */; };
@@ -33,6 +44,8 @@
 		1BFC8F4525A6D39E004C30C5 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC8F4425A6D39E004C30C5 /* Preview.swift */; };
 		1BFC8F4D25A81D44004C30C5 /* UserInteractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC8F4C25A81D44004C30C5 /* UserInteractionView.swift */; };
 		1BFC8F5225A87311004C30C5 /* EnviromentObjectview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC8F5125A87311004C30C5 /* EnviromentObjectview.swift */; };
+		738408E9572ED22CAD41B2B3 /* Pods_FruitMartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E055217D644976C876E73BD4 /* Pods_FruitMartTests.framework */; };
+		94F5E01A1A6D8E7E7CD7F3EF /* Pods_FruitMart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB2A1A0A1812D976D35F586 /* Pods_FruitMart.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,9 +84,20 @@
 		06A82F0C25A180FE001BB7E6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		06A82F1C25A1A2CE001BB7E6 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		06A82F2325A1A617001BB7E6 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		0F51BCCE23C312443995902F /* Pods-FruitMartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitMartTests.release.xcconfig"; path = "Target Support Files/Pods-FruitMartTests/Pods-FruitMartTests.release.xcconfig"; sourceTree = "<group>"; };
+		13123B0478E575E76E49811C /* Pods-FruitMart-FruitMartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitMart-FruitMartUITests.debug.xcconfig"; path = "Target Support Files/Pods-FruitMart-FruitMartUITests/Pods-FruitMart-FruitMartUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1B1BA4A225A2DB8C0011F037 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		1B26006525AC6FED00A13B97 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		1B26006D25AC8AD600A13B97 /* CustomViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModifier.swift; sourceTree = "<group>"; };
+		1B39801625B0284F00458394 /* MarqueeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeButtonView.swift; sourceTree = "<group>"; };
+		1B39802E25B03ECF00458394 /* ProfileImageTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageTestView.swift; sourceTree = "<group>"; };
+		1B39803925B048BD00458394 /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
+		1B5D19AE25AEEC09000AB153 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		1B64401625AF03B7001887EE /* ButtonSuctomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSuctomView.swift; sourceTree = "<group>"; };
+		1B64401E25AF29E4001887EE /* CustomUIAppearanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIAppearanceView.swift; sourceTree = "<group>"; };
+		1B64402825AFC270001887EE /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
+		1B64402D25AFCDF1001887EE /* ResizedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizedImage.swift; sourceTree = "<group>"; };
+		1B64403225AFEEC2001887EE /* ShirinkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShirinkButtonStyle.swift; sourceTree = "<group>"; };
 		1B75012325AC20380003EE17 /* PopOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverView.swift; sourceTree = "<group>"; };
 		1B75012925AC29940003EE17 /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
 		1B75013725AC3FF20003EE17 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
@@ -85,6 +109,13 @@
 		1BFC8F4425A6D39E004C30C5 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		1BFC8F4C25A81D44004C30C5 /* UserInteractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractionView.swift; sourceTree = "<group>"; };
 		1BFC8F5125A87311004C30C5 /* EnviromentObjectview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentObjectview.swift; sourceTree = "<group>"; };
+		1FB2A1A0A1812D976D35F586 /* Pods_FruitMart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitMart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A85E1800847168B06EBC0D7 /* Pods-FruitMart-FruitMartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitMart-FruitMartUITests.release.xcconfig"; path = "Target Support Files/Pods-FruitMart-FruitMartUITests/Pods-FruitMart-FruitMartUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7CB2F3CD7E4D5A36E81C9F73 /* Pods-FruitMart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitMart.debug.xcconfig"; path = "Target Support Files/Pods-FruitMart/Pods-FruitMart.debug.xcconfig"; sourceTree = "<group>"; };
+		91302CB609A6A3962CEECEE4 /* Pods_FruitMart_FruitMartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitMart_FruitMartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF61141122DB16A311D8756 /* Pods-FruitMart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitMart.release.xcconfig"; path = "Target Support Files/Pods-FruitMart/Pods-FruitMart.release.xcconfig"; sourceTree = "<group>"; };
+		E055217D644976C876E73BD4 /* Pods_FruitMartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitMartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41CAAFC6FD92DDCC49735D1 /* Pods-FruitMartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitMartTests.debug.xcconfig"; path = "Target Support Files/Pods-FruitMartTests/Pods-FruitMartTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +123,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F5E01A1A6D8E7E7CD7F3EF /* Pods_FruitMart.framework in Frameworks */,
+				1B39801225B0270F00458394 /* Marquee in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				738408E9572ED22CAD41B2B3 /* Pods_FruitMartTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0207C0F3717778AB309013A2 /* Pods_FruitMart_FruitMartUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +154,8 @@
 				06A82EEE25A180E9001BB7E6 /* FruitMartTests */,
 				06A82EF925A180E9001BB7E6 /* FruitMartUITests */,
 				06A82ED325A180E8001BB7E6 /* Products */,
+				51D64BF32EFDD0315F7E563E /* Pods */,
+				EF7015A6E8E6AC32B5C2F31D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,12 +216,12 @@
 		06A82F0B25A180F9001BB7E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1B64401525AF03A4001887EE /* Custom */,
 				1B75012825AC297D0003EE17 /* Home */,
 				1B1BA4A225A2DB8C0011F037 /* SignInView.swift */,
 				1BFC8F4C25A81D44004C30C5 /* UserInteractionView.swift */,
 				1BFC8F5125A87311004C30C5 /* EnviromentObjectview.swift */,
 				1B75012325AC20380003EE17 /* PopOverView.swift */,
-				1B26006D25AC8AD600A13B97 /* CustomViewModifier.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,6 +238,8 @@
 		06A82F2125A1A604001BB7E6 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				1B39803825B048AB00458394 /* ViewModifier */,
+				1B5D19AE25AEEC09000AB153 /* R.generated.swift */,
 				1BFC8F4325A6D391004C30C5 /* CustomView */,
 				06A82F2225A1A60B001BB7E6 /* Extension */,
 			);
@@ -214,6 +253,34 @@
 				1BFB316525A47EBA008B1E64 /* BundleExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		1B39803825B048AB00458394 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				1B39803925B048BD00458394 /* Popup.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		1B64401525AF03A4001887EE /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				1B26006D25AC8AD600A13B97 /* CustomViewModifier.swift */,
+				1B64401625AF03B7001887EE /* ButtonSuctomView.swift */,
+				1B64401E25AF29E4001887EE /* CustomUIAppearanceView.swift */,
+				1B64402825AFC270001887EE /* Symbol.swift */,
+				1B64402D25AFCDF1001887EE /* ResizedImage.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		1B64403725AFEF88001887EE /* CustomStyle */ = {
+			isa = PBXGroup;
+			children = (
+				1B64403225AFEEC2001887EE /* ShirinkButtonStyle.swift */,
+			);
+			path = CustomStyle;
 			sourceTree = "<group>";
 		};
 		1B75012825AC297D0003EE17 /* Home */ = {
@@ -241,9 +308,35 @@
 		1BFC8F4325A6D391004C30C5 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				1B64403725AFEF88001887EE /* CustomStyle */,
 				1BFC8F4425A6D39E004C30C5 /* Preview.swift */,
+				1B39801625B0284F00458394 /* MarqueeButtonView.swift */,
+				1B39802E25B03ECF00458394 /* ProfileImageTestView.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		51D64BF32EFDD0315F7E563E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CB2F3CD7E4D5A36E81C9F73 /* Pods-FruitMart.debug.xcconfig */,
+				ADF61141122DB16A311D8756 /* Pods-FruitMart.release.xcconfig */,
+				13123B0478E575E76E49811C /* Pods-FruitMart-FruitMartUITests.debug.xcconfig */,
+				6A85E1800847168B06EBC0D7 /* Pods-FruitMart-FruitMartUITests.release.xcconfig */,
+				F41CAAFC6FD92DDCC49735D1 /* Pods-FruitMartTests.debug.xcconfig */,
+				0F51BCCE23C312443995902F /* Pods-FruitMartTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF7015A6E8E6AC32B5C2F31D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FB2A1A0A1812D976D35F586 /* Pods_FruitMart.framework */,
+				91302CB609A6A3962CEECEE4 /* Pods_FruitMart_FruitMartUITests.framework */,
+				E055217D644976C876E73BD4 /* Pods_FruitMartTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,15 +346,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06A82EFF25A180E9001BB7E6 /* Build configuration list for PBXNativeTarget "FruitMart" */;
 			buildPhases = (
+				3CBD407E90A25B13C9ADAC6C /* [CP] Check Pods Manifest.lock */,
 				06A82ECE25A180E8001BB7E6 /* Sources */,
 				06A82ECF25A180E8001BB7E6 /* Frameworks */,
 				06A82ED025A180E8001BB7E6 /* Resources */,
+				5A2003F55E225DF978AAE999 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FruitMart;
+			packageProductDependencies = (
+				1B39801125B0270F00458394 /* Marquee */,
+			);
 			productName = FruitMart;
 			productReference = 06A82ED225A180E8001BB7E6 /* FruitMart.app */;
 			productType = "com.apple.product-type.application";
@@ -270,6 +368,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06A82F0225A180E9001BB7E6 /* Build configuration list for PBXNativeTarget "FruitMartTests" */;
 			buildPhases = (
+				FB24165D9390989883B470D6 /* [CP] Check Pods Manifest.lock */,
 				06A82EE725A180E9001BB7E6 /* Sources */,
 				06A82EE825A180E9001BB7E6 /* Frameworks */,
 				06A82EE925A180E9001BB7E6 /* Resources */,
@@ -288,9 +387,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06A82F0525A180E9001BB7E6 /* Build configuration list for PBXNativeTarget "FruitMartUITests" */;
 			buildPhases = (
+				56BD493FFAC303DF9B99B1A0 /* [CP] Check Pods Manifest.lock */,
 				06A82EF225A180E9001BB7E6 /* Sources */,
 				06A82EF325A180E9001BB7E6 /* Frameworks */,
 				06A82EF425A180E9001BB7E6 /* Resources */,
+				79C18C85DF9CF58037E27698 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -333,6 +434,9 @@
 				Base,
 			);
 			mainGroup = 06A82EC925A180E8001BB7E6;
+			packageReferences = (
+				1B39801025B0270F00458394 /* XCRemoteSwiftPackageReference "Marquee" */,
+			);
 			productRefGroup = 06A82ED325A180E8001BB7E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -372,22 +476,134 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3CBD407E90A25B13C9ADAC6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FruitMart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56BD493FFAC303DF9B99B1A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FruitMart-FruitMartUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A2003F55E225DF978AAE999 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FruitMart/Pods-FruitMart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FruitMart/Pods-FruitMart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FruitMart/Pods-FruitMart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79C18C85DF9CF58037E27698 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FruitMart-FruitMartUITests/Pods-FruitMart-FruitMartUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FruitMart-FruitMartUITests/Pods-FruitMart-FruitMartUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FruitMart-FruitMartUITests/Pods-FruitMart-FruitMartUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB24165D9390989883B470D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FruitMartTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		06A82ECE25A180E8001BB7E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B64403325AFEEC2001887EE /* ShirinkButtonStyle.swift in Sources */,
 				1B75012A25AC29940003EE17 /* QuantitySelector.swift in Sources */,
+				1B39803A25B048BD00458394 /* Popup.swift in Sources */,
 				1B1BA4A325A2DB8C0011F037 /* SignInView.swift in Sources */,
 				06A82EDD25A180E8001BB7E6 /* FruitMart.xcdatamodeld in Sources */,
+				1B39802F25B03ECF00458394 /* ProfileImageTestView.swift in Sources */,
 				1B26006625AC6FED00A13B97 /* Order.swift in Sources */,
 				1B75013825AC3FF20003EE17 /* FavoriteButton.swift in Sources */,
+				1B64402925AFC270001887EE /* Symbol.swift in Sources */,
+				1B64401F25AF29E4001887EE /* CustomUIAppearanceView.swift in Sources */,
 				1B75012425AC20380003EE17 /* PopOverView.swift in Sources */,
 				1BFC8F4D25A81D44004C30C5 /* UserInteractionView.swift in Sources */,
 				1B7EFFA225A2960800C7961C /* Product.swift in Sources */,
+				1B5D19AF25AEEC09000AB153 /* R.generated.swift in Sources */,
+				1B64401725AF03B7001887EE /* ButtonSuctomView.swift in Sources */,
 				06A82ED625A180E8001BB7E6 /* AppDelegate.swift in Sources */,
+				1B39801725B0284F00458394 /* MarqueeButtonView.swift in Sources */,
 				06A82F1D25A1A2CE001BB7E6 /* ProductRow.swift in Sources */,
 				1BFB317C25A58475008B1E64 /* ProductDetailView.swift in Sources */,
+				1B64402E25AFCDF1001887EE /* ResizedImage.swift in Sources */,
 				1BFB316625A47EBA008B1E64 /* BundleExtension.swift in Sources */,
 				1BFC8F4525A6D39E004C30C5 /* Preview.swift in Sources */,
 				1BFC8F5225A87311004C30C5 /* EnviromentObjectview.swift in Sources */,
@@ -494,7 +710,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -549,7 +765,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -561,6 +777,7 @@
 		};
 		06A82F0025A180E9001BB7E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CB2F3CD7E4D5A36E81C9F73 /* Pods-FruitMart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -569,7 +786,7 @@
 				DEVELOPMENT_TEAM = 9P6WAX9VN5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FruitMart/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -583,6 +800,7 @@
 		};
 		06A82F0125A180E9001BB7E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADF61141122DB16A311D8756 /* Pods-FruitMart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -591,7 +809,7 @@
 				DEVELOPMENT_TEAM = 9P6WAX9VN5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FruitMart/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -605,6 +823,7 @@
 		};
 		06A82F0325A180E9001BB7E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F41CAAFC6FD92DDCC49735D1 /* Pods-FruitMartTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -627,6 +846,7 @@
 		};
 		06A82F0425A180E9001BB7E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F51BCCE23C312443995902F /* Pods-FruitMartTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -649,6 +869,7 @@
 		};
 		06A82F0625A180E9001BB7E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13123B0478E575E76E49811C /* Pods-FruitMart-FruitMartUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -669,6 +890,7 @@
 		};
 		06A82F0725A180E9001BB7E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A85E1800847168B06EBC0D7 /* Pods-FruitMart-FruitMartUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -727,6 +949,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B39801025B0270F00458394 /* XCRemoteSwiftPackageReference "Marquee" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIKit/Marquee";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B39801125B0270F00458394 /* Marquee */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B39801025B0270F00458394 /* XCRemoteSwiftPackageReference "Marquee" */;
+			productName = Marquee;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		06A82EDB25A180E8001BB7E6 /* FruitMart.xcdatamodeld */ = {

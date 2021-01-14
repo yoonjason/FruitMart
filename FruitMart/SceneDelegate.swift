@@ -27,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        let contentView = Home(store: Store())
         let contentView = Home().environmentObject(Store())
             
-//        let contentView = PopOverView()
+//        let contentView = MarqueeButtonView()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

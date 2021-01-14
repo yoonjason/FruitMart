@@ -105,7 +105,7 @@ struct SignInView: View {
         
         
         
-//        myStackView
+        myStackView
 //        customListView
 //        environmentView
     }
@@ -188,6 +188,10 @@ struct SignInView: View {
                 .font(.title)
             Rectangle()
                 .frame(width: 250, height: 40)
+                .overlay(
+                    Text("사각형")
+                        .foregroundColor(.white)
+                )
         }
     }
 

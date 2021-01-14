@@ -1,0 +1,6 @@
+framework module Pods_FruitMart_FruitMartUITests {
+  umbrella header "Pods-FruitMart-FruitMartUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Marquee",
+        "repositoryURL": "https://github.com/SwiftUIKit/Marquee",
+        "state": {
+          "branch": null,
+          "revision": "c0ca3fe49f91cbf4fda7a4fbcf9d79db6796db85",
+          "version": "0.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

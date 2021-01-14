@@ -15,13 +15,19 @@ struct FavoriteButton: View {
 //        Button(action: {
 //            self.store.toggleFavorite(of: self.product)
 //        }) {
-            Image(systemName: imageName)
-                .imageScale(.large)
-                .foregroundColor(.peach)
-                .frame(width:32, height: 32)
-                .onTapGesture {
-                    self.store.toggleFavorite(of: self.product)
-                }
+//            Image(systemName: imageName)
+//                .imageScale(.large)
+//                .foregroundColor(.peach)
+//                .frame(width:32, height: 32)
+//                .onTapGesture {
+//                    self.store.toggleFavorite(of: self.product)
+//                }
+        Symbol(imageName, imageScale: .large, color: .peach)
+            .frame(width: 32, height: 32)
+            .onTapGesture {
+                self.store.toggleFavorite(of: self.product)
+            }
+        
 //        }
     }
     

@@ -18,7 +18,10 @@ struct ProductDetailView: View {
             productImage
             orderView
         }
-            .edgesIgnoringSafeArea(.top)
+        
+        .modifier(Popup(style: .blur, message:Text("팝업")))
+        .edgesIgnoringSafeArea(.top)
+//        .edgesIgnoringSafeArea(.bottom)
             .alert(isPresented: $showingAlert) {
                 print($showingAlert)
                 return confirmAlert
@@ -48,13 +51,15 @@ struct ProductDetailView: View {
 
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let source1 = ProductDetailView(product: productSamples[0])
-//        let source2 = ProductDetailView(product: productSamples[1])
-        return Group {
-            Preview(source: source1)
-//            Preview(source: source2, devices: [.iPhone12Pro], displayDarkMode: false)
-        }
-//        ProductDetailView(product: productSamples[1])
+        
+        
+//        let source1 = ProductDetailView(product: productSamples[0])
+////        let source2 = ProductDetailView(product: productSamples[1])
+//        return Group {
+//            Preview(source: source1)
+////            Preview(source: source2, devices: [.iPhone12Pro], displayDarkMode: false)
+//        }
+        ProductDetailView(product: productSamples[1])
 
     }
 }
@@ -62,9 +67,7 @@ struct ProductDetailView_Previews: PreviewProvider {
 extension ProductDetailView {
     var productImage: some View {
         GeometryReader { _ in
-            Image(self.product.imageName)
-                .resizable()
-                .scaledToFill()
+            ResizedImage(self.product.imageName)
         }
     }
 
@@ -122,7 +125,7 @@ extension ProductDetailView {
                     .font(.system(size: 20)).fontWeight(.medium))
                 .foregroundColor(Color.white)
         }
-            .padding(.vertical, 8)
+        .buttonStyle(ShirinkButtonStyle())
     }
 
     func splitText(_ text: String) -> String {
