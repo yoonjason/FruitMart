@@ -60,38 +60,67 @@ struct Popup<Message : View>: ViewModifier {
             .background(Color.white.scaleEffect(0.7))
             .offset(x: 0, y: -20)
     }
-    
-    
+
+
 }
 
 fileprivate struct PopupToggle: ViewModifier {
-    @Binding var isPresented : Bool //true일 때만 팝업창 표현
+    @Binding var isPresented: Bool //true일 때만 팝업창 표현
     func body(content: Content) -> some View {
         content
             .disabled(isPresented)
             .onTapGesture {
-                self.isPresented.toggle()
-            }
+            self.isPresented.toggle()
+        }
+    }
+}
+
+fileprivate struct PopupItem<Item : Identifiable>: ViewModifier {
+    @Binding var item: Item? ///Identifiable 프로토콜을 채택하고 있는 Item이란 이름의 제네릭 대충 id라고 보면된다.
+    func body(content: Content) -> some View {
+        content
+            .disabled(item != nil) //팝업이 떠 있는 동안 다른 뷰에 대한 상호작용 비활성화
+        .onTapGesture {
+            self.item = nil
+        }
     }
 }
 
 extension View {
     func popup<Content : View> (
-        isPresented : Binding<Bool>,
-        size : CGSize? = nil,
-        style : PopupStyle = .none,
-        @ViewBuilder content : () -> Content
+        isPresented: Binding<Bool>,
+        size: CGSize? = nil,
+        style: PopupStyle = .none,
+        @ViewBuilder content: () -> Content
     ) -> some View {
         if isPresented.wrappedValue {
             let popup = Popup(size: size, style: style, message: content())
             let popupToggle = PopupToggle(isPresented: isPresented)
             let modifiedContent = self.modifier(popup).modifier(popupToggle)
             return AnyView(modifiedContent)
-        }else {
+        } else {
             return AnyView(self)
         }
     }
+
+    func popup<Content : View, Item : Identifiable>(
+        item: Binding<Item?>,
+        size: CGSize? = nil,
+        style: PopupStyle = .none,
+        @ViewBuilder content: (Item) -> Content
+    ) -> some View {
+        guard let selectedItem = item.wrappedValue else {
+            return AnyView(self)
+        }
+        let content = content(selectedItem)
+        let popup = Popup(size: size, style: style, message: content)
+        let popupItem = PopupItem(item: item)
+        let modifiedContent = self.modifier(popup).modifier(popupItem)
+        return AnyView(modifiedContent)
+    }
+
 }
+
 
 //fileprivate struct PopupToggle : ViewModifier {
 //    typealias Body = <#type#>

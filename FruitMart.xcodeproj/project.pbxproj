@@ -27,6 +27,7 @@
 		1B39801725B0284F00458394 /* MarqueeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B39801625B0284F00458394 /* MarqueeButtonView.swift */; };
 		1B39802F25B03ECF00458394 /* ProfileImageTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B39802E25B03ECF00458394 /* ProfileImageTestView.swift */; };
 		1B39803A25B048BD00458394 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B39803925B048BD00458394 /* Popup.swift */; };
+		1B39804325B14B3000458394 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1B39804225B14B3000458394 /* Alamofire */; };
 		1B5D19AF25AEEC09000AB153 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5D19AE25AEEC09000AB153 /* R.generated.swift */; };
 		1B64401725AF03B7001887EE /* ButtonSuctomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B64401625AF03B7001887EE /* ButtonSuctomView.swift */; };
 		1B64401F25AF29E4001887EE /* CustomUIAppearanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B64401E25AF29E4001887EE /* CustomUIAppearanceView.swift */; };
@@ -123,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B39804325B14B3000458394 /* Alamofire in Frameworks */,
 				94F5E01A1A6D8E7E7CD7F3EF /* Pods_FruitMart.framework in Frameworks */,
 				1B39801225B0270F00458394 /* Marquee in Frameworks */,
 			);
@@ -359,6 +361,7 @@
 			name = FruitMart;
 			packageProductDependencies = (
 				1B39801125B0270F00458394 /* Marquee */,
+				1B39804225B14B3000458394 /* Alamofire */,
 			);
 			productName = FruitMart;
 			productReference = 06A82ED225A180E8001BB7E6 /* FruitMart.app */;
@@ -436,6 +439,7 @@
 			mainGroup = 06A82EC925A180E8001BB7E6;
 			packageReferences = (
 				1B39801025B0270F00458394 /* XCRemoteSwiftPackageReference "Marquee" */,
+				1B39804125B14B3000458394 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 06A82ED325A180E8001BB7E6 /* Products */;
 			projectDirPath = "";
@@ -959,6 +963,14 @@
 				minimumVersion = 0.2.0;
 			};
 		};
+		1B39804125B14B3000458394 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -966,6 +978,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1B39801025B0270F00458394 /* XCRemoteSwiftPackageReference "Marquee" */;
 			productName = Marquee;
+		};
+		1B39804225B14B3000458394 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B39804125B14B3000458394 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 

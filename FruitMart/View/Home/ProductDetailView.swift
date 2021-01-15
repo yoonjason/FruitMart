@@ -11,20 +11,22 @@ struct ProductDetailView: View {
     let product: Product
     @State private var quantity: Int = 1
     @State private var showingAlert: Bool = false
-    @EnvironmentObject private var store : Store
+    @EnvironmentObject private var store: Store
+    @State private var showingPopup: Bool = false
 
     var body: some View {
         VStack(spacing: 0) {
             productImage
             orderView
         }
-        
-        .modifier(Popup(style: .blur, message:Text("팝업")))
-        .edgesIgnoringSafeArea(.top)
+        .popup(isPresented: $showingPopup) {
+            Text("팝업요")
+        }
+            .edgesIgnoringSafeArea(.top)
 //        .edgesIgnoringSafeArea(.bottom)
-            .alert(isPresented: $showingAlert) {
-                print($showingAlert)
-                return confirmAlert
+        .alert(isPresented: $showingAlert) {
+            print($showingAlert)
+            return confirmAlert
         }
 
     }
@@ -40,19 +42,19 @@ struct ProductDetailView: View {
             secondaryButton: .cancel(Text("취소"))
         )
     }
-    
-    func placeOrder(){
+
+    func placeOrder() {
         store.placeOrder(product: product, quantity: quantity)
     }
-    
+
 
 
 }
 
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        
-        
+
+
 //        let source1 = ProductDetailView(product: productSamples[0])
 ////        let source2 = ProductDetailView(product: productSamples[1])
 //        return Group {
@@ -125,7 +127,7 @@ extension ProductDetailView {
                     .font(.system(size: 20)).fontWeight(.medium))
                 .foregroundColor(Color.white)
         }
-        .buttonStyle(ShirinkButtonStyle())
+            .buttonStyle(ShirinkButtonStyle())
     }
 
     func splitText(_ text: String) -> String {

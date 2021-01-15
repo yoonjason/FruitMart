@@ -8,6 +8,8 @@
 import UIKit
 import SwiftUI
 
+let kakaoAddressKey = "d12ad3589fc960f5fce16b0166278d4a"
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
