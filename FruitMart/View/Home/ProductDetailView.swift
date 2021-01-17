@@ -19,8 +19,11 @@ struct ProductDetailView: View {
             productImage
             orderView
         }
+//        .popup(isPresented: $showingPopup) {
+//            Text("팝업요")
+//        }
         .popup(isPresented: $showingPopup) {
-            Text("팝업요")
+            Text("왤케 이해가 안되냐..")
         }
             .edgesIgnoringSafeArea(.top)
 //        .edgesIgnoringSafeArea(.bottom)
@@ -45,6 +48,7 @@ struct ProductDetailView: View {
 
     func placeOrder() {
         store.placeOrder(product: product, quantity: quantity)
+        showingPopup = true
     }
 
 

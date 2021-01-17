@@ -37,6 +37,8 @@
 		1B75012425AC20380003EE17 /* PopOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75012325AC20380003EE17 /* PopOverView.swift */; };
 		1B75012A25AC29940003EE17 /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75012925AC29940003EE17 /* QuantitySelector.swift */; };
 		1B75013825AC3FF20003EE17 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75013725AC3FF20003EE17 /* FavoriteButton.swift */; };
+		1B7E0CC925B4003800E4A65D /* Popup2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7E0CC825B4003800E4A65D /* Popup2.swift */; };
+		1B7E0CCE25B4113800E4A65D /* OrderCompletedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7E0CCD25B4113800E4A65D /* OrderCompletedMessage.swift */; };
 		1B7EFFA225A2960800C7961C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7EFFA125A2960800C7961C /* Product.swift */; };
 		1BFB316625A47EBA008B1E64 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB316525A47EBA008B1E64 /* BundleExtension.swift */; };
 		1BFB316B25A48053008B1E64 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFB316A25A48053008B1E64 /* Store.swift */; };
@@ -102,6 +104,8 @@
 		1B75012325AC20380003EE17 /* PopOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverView.swift; sourceTree = "<group>"; };
 		1B75012925AC29940003EE17 /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
 		1B75013725AC3FF20003EE17 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		1B7E0CC825B4003800E4A65D /* Popup2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup2.swift; sourceTree = "<group>"; };
+		1B7E0CCD25B4113800E4A65D /* OrderCompletedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCompletedMessage.swift; sourceTree = "<group>"; };
 		1B7EFFA125A2960800C7961C /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		1BFB316525A47EBA008B1E64 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		1BFB316A25A48053008B1E64 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -261,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				1B39803925B048BD00458394 /* Popup.swift */,
+				1B7E0CC825B4003800E4A65D /* Popup2.swift */,
 			);
 			path = ViewModifier;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				06A82F0C25A180FE001BB7E6 /* Home.swift */,
+				1B7E0CCD25B4113800E4A65D /* OrderCompletedMessage.swift */,
 				06A82F1C25A1A2CE001BB7E6 /* ProductRow.swift */,
 				1BFB317B25A58475008B1E64 /* ProductDetailView.swift */,
 				1B75012925AC29940003EE17 /* QuantitySelector.swift */,
@@ -590,6 +596,7 @@
 			files = (
 				1B64403325AFEEC2001887EE /* ShirinkButtonStyle.swift in Sources */,
 				1B75012A25AC29940003EE17 /* QuantitySelector.swift in Sources */,
+				1B7E0CCE25B4113800E4A65D /* OrderCompletedMessage.swift in Sources */,
 				1B39803A25B048BD00458394 /* Popup.swift in Sources */,
 				1B1BA4A325A2DB8C0011F037 /* SignInView.swift in Sources */,
 				06A82EDD25A180E8001BB7E6 /* FruitMart.xcdatamodeld in Sources */,
@@ -605,6 +612,7 @@
 				1B64401725AF03B7001887EE /* ButtonSuctomView.swift in Sources */,
 				06A82ED625A180E8001BB7E6 /* AppDelegate.swift in Sources */,
 				1B39801725B0284F00458394 /* MarqueeButtonView.swift in Sources */,
+				1B7E0CC925B4003800E4A65D /* Popup2.swift in Sources */,
 				06A82F1D25A1A2CE001BB7E6 /* ProductRow.swift in Sources */,
 				1BFB317C25A58475008B1E64 /* ProductDetailView.swift in Sources */,
 				1B64402E25AFCDF1001887EE /* ResizedImage.swift in Sources */,
