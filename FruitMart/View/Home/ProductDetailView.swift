@@ -23,7 +23,7 @@ struct ProductDetailView: View {
 //            Text("팝업요")
 //        }
         .popup(isPresented: $showingPopup) {
-            Text("왤케 이해가 안되냐..")
+            OrderCompletedMessage()
         }
             .edgesIgnoringSafeArea(.top)
 //        .edgesIgnoringSafeArea(.bottom)

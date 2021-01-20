@@ -9,7 +9,8 @@ import SwiftUI
 
 
 struct ProductRow: View {
-    
+    @EnvironmentObject var store : Store
+//    @Binding var quickOrder : Product?
     let product : Product
     
     var body: some View {
