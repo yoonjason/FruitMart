@@ -10,19 +10,15 @@ import SwiftUI
 struct Home: View {
 //    let store: Store
     @EnvironmentObject private var store: Store
+    @State private var quickOrder: Product?
+
 
     var body: some View {
         NavigationView {
-
-//            VStack {
-//                ProductRow(product: productSamples[0])
-//                ProductRow(product: productSamples[1])
-//                ProductRow(product: productSamples[2])
-//            }
             List(store.products) { product in
                 NavigationLink(
                     destination: ProductDetailView(product: product)) {
-                    ProductRow(product: product)
+                    ProductRow(quickOrder: .constant(nil), product: product)
                 }
             }
                 .navigationBarTitle("과일마트")
@@ -32,11 +28,8 @@ struct Home: View {
                 .onDisappear {
                 print("onDisappear")
             }
-
-
         }
-
-
+            .popup(item: $quickOrder, content: popupMessage(product:))
     }
 }
 
@@ -55,5 +48,18 @@ extension Home {
 
 
     }
+
+    func popupMessage(product: Product) -> some View {
+        let name = product.name.split(separator: " ").last!
+        return VStack {
+            Text(name)
+                .font(.largeTitle)
+                .foregroundColor(.peach)
+                .padding()
+
+            OrderCompletedMessage()
+        }
+    }
+
 }
 
