@@ -29,7 +29,9 @@ struct Home: View {
                 print("onDisappear")
             }
         }
-            .popup(item: $quickOrder, content: popupMessage(product:))
+        .popOverContext(item: $quickOrder, style: .blur, content: popupMessage(product: ))
+//            .popup(item: $quickOrder, content: popupMessage(product:))
+        
     }
 }
 
