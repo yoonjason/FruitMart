@@ -11,6 +11,7 @@ import SwiftUI
 struct ProductRow: View {
     @EnvironmentObject var store : Store
     @Binding var quickOrder : Product?
+
     let product : Product
     
     var body: some View {
@@ -90,6 +91,10 @@ extension ProductRow {
                     print("onTap")
                     self.orderProduct()
                 }
+        }
+        .onTapGesture {
+            self.orderProduct()
+            print("asdfasfasfa")
         }
     }
 }

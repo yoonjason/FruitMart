@@ -27,10 +27,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Add `@Environment(\.managedObjectContext)` in the views that will need the context.
 //        let contentView = ContentView().environment(\.managedObjectContext, context)
 //        let contentView = Home(store: Store())
-        let contentView = Home().environmentObject(Store())
-        
-        UITabBar.appearance().backgroundColor = UIColor.yellow
-        UITabBar.appearance().unselectedItemTintColor = UIColor.blue
+
+        let contentView = Home()
+            .accentColor(Color.primary)
+            .environmentObject(Store())
+
             
 //        let contentView = MarqueeButtonView()
 
@@ -41,6 +42,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             window.makeKeyAndVisible()
         }
+    }
+    
+    private func configureAppearance() {
+        UINavigationBar.appearance().largeTitleTextAttributes
+            = [ .foregroundColor : UIColor(named: "peach")
+         ]
+        UINavigationBar.appearance().titleTextAttributes = [
+            .foregroundColor : UIColor(named: "peach")!
+        ]
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -10,6 +10,7 @@ import SwiftUI
 struct Home: View {
 //    let store: Store
     @EnvironmentObject private var store: Store
+
     @State var product: Product?
     @State var quickOrder: Product?
     @State private var showingFavoriteImage: Bool = true
@@ -30,11 +31,11 @@ struct Home: View {
                 .onDisappear {
                 print("onDisappear")
             }
-
-
         }
-            .popup(item: $quickOrder, content: popupMessage(product:))
 
+        .popOverContext(item: $quickOrder, style: .blur, content: popupMessage(product: ))
+//            .popup(item: $quickOrder, content: popupMessage(product:))
+        
 
     }
 }
@@ -52,18 +53,6 @@ extension Home {
     class ViewModel: ObservableObject {
         @Published private var products: [Product] = []
 
-    }
-
-    func popupMessage(product: Product) -> some View {
-        let name = product.name.split(separator: " ").last!
-        return VStack {
-            Text(name)
-                .font(.title).bold().kerning(3)
-                .foregroundColor(.black)
-                .padding()
-
-            OrderCompletedMessage()
-        }
     }
 
     var favoriteProducts: some View {
@@ -89,6 +78,18 @@ extension Home {
 
     var showFavorite: Bool {
         !store.products.filter { $0.isFavorite }.isEmpty
+    }
+
+    func popupMessage(product: Product) -> some View {
+      let name = product.name.split(separator: " ").last!
+      return VStack {
+        Text(name)
+          .font(.title).bold().kerning(3)
+          .foregroundColor(.peach)
+          .padding()
+        
+        OrderCompletedMessage()
+      }
     }
 }
 
