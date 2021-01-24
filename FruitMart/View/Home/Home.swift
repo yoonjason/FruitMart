@@ -10,20 +10,18 @@ import SwiftUI
 struct Home: View {
 //    let store: Store
     @EnvironmentObject private var store: Store
+    @State var product: Product?
+    @State var quickOrder: Product?
+    @State private var showingFavoriteImage: Bool = true
 
     var body: some View {
         NavigationView {
-
-//            VStack {
-//                ProductRow(product: productSamples[0])
-//                ProductRow(product: productSamples[1])
-//                ProductRow(product: productSamples[2])
-//            }
-            List(store.products) { product in
-                NavigationLink(
-                    destination: ProductDetailView(product: product)) {
-                    ProductRow(product: product)
+            VStack {
+                if showFavorite {
+                    favoriteProducts
                 }
+                darkerDivider
+                productList
             }
                 .navigationBarTitle("과일마트")
                 .onAppear {
@@ -35,6 +33,7 @@ struct Home: View {
 
 
         }
+            .popup(item: $quickOrder, content: popupMessage(product:))
 
 
     }
@@ -53,7 +52,43 @@ extension Home {
     class ViewModel: ObservableObject {
         @Published private var products: [Product] = []
 
+    }
 
+    func popupMessage(product: Product) -> some View {
+        let name = product.name.split(separator: " ").last!
+        return VStack {
+            Text(name)
+                .font(.title).bold().kerning(3)
+                .foregroundColor(.black)
+                .padding()
+
+            OrderCompletedMessage()
+        }
+    }
+
+    var favoriteProducts: some View {
+        FavoriteProductScrollView(showingImage: $showingFavoriteImage)
+            .padding(.top, 24)
+            .padding(.bottom, 8)
+    }
+
+    var darkerDivider: some View {
+        Color.primary
+            .opacity(0.3)
+            .frame(maxWidth: .infinity, maxHeight: 1)
+    }
+
+    var productList: some View {
+        List(store.products) { product in
+            NavigationLink(
+                destination: ProductDetailView(product: product)) {
+                ProductRow(quickOrder: self.$quickOrder, product: product)
+            }
+        }
+    }
+
+    var showFavorite: Bool {
+        !store.products.filter { $0.isFavorite }.isEmpty
     }
 }
 

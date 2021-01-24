@@ -28,6 +28,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        let contentView = ContentView().environment(\.managedObjectContext, context)
 //        let contentView = Home(store: Store())
         let contentView = Home().environmentObject(Store())
+        
+        UITabBar.appearance().backgroundColor = UIColor.yellow
+        UITabBar.appearance().unselectedItemTintColor = UIColor.blue
             
 //        let contentView = MarqueeButtonView()
 

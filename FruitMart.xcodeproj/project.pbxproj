@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0207C0F3717778AB309013A2 /* Pods_FruitMart_FruitMartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91302CB609A6A3962CEECEE4 /* Pods_FruitMart_FruitMartUITests.framework */; };
+		06A0DFBA25BD2407005E37BE /* TestCustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A0DFB925BD2407005E37BE /* TestCustomScrollView.swift */; };
 		06A82ED625A180E8001BB7E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A82ED525A180E8001BB7E6 /* AppDelegate.swift */; };
 		06A82ED825A180E8001BB7E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A82ED725A180E8001BB7E6 /* SceneDelegate.swift */; };
 		06A82EDA25A180E8001BB7E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A82ED925A180E8001BB7E6 /* ContentView.swift */; };
@@ -20,6 +21,8 @@
 		06A82F0D25A180FE001BB7E6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A82F0C25A180FE001BB7E6 /* Home.swift */; };
 		06A82F1D25A1A2CE001BB7E6 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A82F1C25A1A2CE001BB7E6 /* ProductRow.swift */; };
 		06A82F2425A1A617001BB7E6 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A82F2325A1A617001BB7E6 /* ColorExtension.swift */; };
+		06F5919025BD3AA400537028 /* TestCustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5918F25BD3AA400537028 /* TestCustomTabBarView.swift */; };
+		06F5919525BD466900537028 /* FavoriteProductScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5919425BD466900537028 /* FavoriteProductScrollView.swift */; };
 		1B1BA4A325A2DB8C0011F037 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1BA4A225A2DB8C0011F037 /* SignInView.swift */; };
 		1B26006625AC6FED00A13B97 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B26006525AC6FED00A13B97 /* Order.swift */; };
 		1B26006E25AC8AD600A13B97 /* CustomViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B26006D25AC8AD600A13B97 /* CustomViewModifier.swift */; };
@@ -70,6 +73,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06A0DFB925BD2407005E37BE /* TestCustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCustomScrollView.swift; sourceTree = "<group>"; };
 		06A82ED225A180E8001BB7E6 /* FruitMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A82ED525A180E8001BB7E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06A82ED725A180E8001BB7E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 		06A82F0C25A180FE001BB7E6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		06A82F1C25A1A2CE001BB7E6 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		06A82F2325A1A617001BB7E6 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		06F5918F25BD3AA400537028 /* TestCustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCustomTabBarView.swift; sourceTree = "<group>"; };
+		06F5919425BD466900537028 /* FavoriteProductScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProductScrollView.swift; sourceTree = "<group>"; };
 		0F51BCCE23C312443995902F /* Pods-FruitMartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitMartTests.release.xcconfig"; path = "Target Support Files/Pods-FruitMartTests/Pods-FruitMartTests.release.xcconfig"; sourceTree = "<group>"; };
 		13123B0478E575E76E49811C /* Pods-FruitMart-FruitMartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitMart-FruitMartUITests.debug.xcconfig"; path = "Target Support Files/Pods-FruitMart-FruitMartUITests/Pods-FruitMart-FruitMartUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1B1BA4A225A2DB8C0011F037 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -302,6 +308,7 @@
 				1BFB317B25A58475008B1E64 /* ProductDetailView.swift */,
 				1B75012925AC29940003EE17 /* QuantitySelector.swift */,
 				1B75013725AC3FF20003EE17 /* FavoriteButton.swift */,
+				06F5919425BD466900537028 /* FavoriteProductScrollView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -310,6 +317,8 @@
 			isa = PBXGroup;
 			children = (
 				1B7E0CDC25B51EB200E4A65D /* StateBindingView.swift */,
+				06A0DFB925BD2407005E37BE /* TestCustomScrollView.swift */,
+				06F5918F25BD3AA400537028 /* TestCustomTabBarView.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -609,6 +618,7 @@
 				1B75012A25AC29940003EE17 /* QuantitySelector.swift in Sources */,
 				1B7E0CCE25B4113800E4A65D /* OrderCompletedMessage.swift in Sources */,
 				1B39803A25B048BD00458394 /* Popup.swift in Sources */,
+				06F5919525BD466900537028 /* FavoriteProductScrollView.swift in Sources */,
 				1B1BA4A325A2DB8C0011F037 /* SignInView.swift in Sources */,
 				06A82EDD25A180E8001BB7E6 /* FruitMart.xcdatamodeld in Sources */,
 				1B39802F25B03ECF00458394 /* ProfileImageTestView.swift in Sources */,
@@ -618,7 +628,9 @@
 				1B64402925AFC270001887EE /* Symbol.swift in Sources */,
 				1B64401F25AF29E4001887EE /* CustomUIAppearanceView.swift in Sources */,
 				1B75012425AC20380003EE17 /* PopOverView.swift in Sources */,
+				06A0DFBA25BD2407005E37BE /* TestCustomScrollView.swift in Sources */,
 				1BFC8F4D25A81D44004C30C5 /* UserInteractionView.swift in Sources */,
+				06F5919025BD3AA400537028 /* TestCustomTabBarView.swift in Sources */,
 				1B7EFFA225A2960800C7961C /* Product.swift in Sources */,
 				1B5D19AF25AEEC09000AB153 /* R.generated.swift in Sources */,
 				1B64401725AF03B7001887EE /* ButtonSuctomView.swift in Sources */,
